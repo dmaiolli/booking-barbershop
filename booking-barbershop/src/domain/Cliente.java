@@ -2,13 +2,18 @@ package domain;
 
 public class Cliente {
 	private String nome;
-	private Integer dataNascimento;
+	private Integer idade;
 	private Estilo estilo;
+	
+	public Cliente(String nome, Integer idade) {
+		this.nome = nome;
+		this.idade = idade;
+	}
 
-	public Cliente(String nome, Integer dataNascimento, Estilo estilo) {
+	public Cliente(String nome, Integer idade, Estilo estilo) {
 		super();
 		this.nome = nome;
-		this.dataNascimento = dataNascimento;
+		this.idade = idade;
 		this.estilo = estilo;
 	}
 
@@ -21,11 +26,11 @@ public class Cliente {
 	}
 
 	public Integer getDataNascimento() {
-		return dataNascimento;
+		return idade;
 	}
 
-	public void setDataNascimento(Integer dataNascimento) {
-		this.dataNascimento = dataNascimento;
+	public void setDataNascimento(Integer idade) {
+		this.idade = idade;
 	}
 
 	public Estilo getEstilo() {
